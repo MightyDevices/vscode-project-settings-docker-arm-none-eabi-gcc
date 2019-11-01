@@ -71,6 +71,27 @@
                 "kind": "build",
                 "isDefault": true
             }
-        }
+        },
+        {
+            "label": "Copy Includes",
+            "type": "shell",
+            "command": "docker",
+            "args": [
+                "exec",
+                "-w",
+                "/gcc-arm-none-eabi-8-2019-q3-update",
+                "${workspaceFolderBasename}",
+                "sh",
+                "-c",
+                "find . -name \"*.h\" | cpio -updm /${workspaceFolderBasename}/.includes"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        
+        
     ]
 }

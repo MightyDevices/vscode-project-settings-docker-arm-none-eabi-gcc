@@ -1,0 +1,11 @@
+{
+    "C_Cpp.default.systemIncludePath": [
+        "./.includes/arm-none-eabi/include",
+        "./.includes/lib/gcc/arm-none-eabi/8.3.1/include",
+    ],
+    "C_Cpp.default.includePath": [
+        "./.includes/arm-none-eabi/include",
+        "./.includes/lib/gcc/arm-none-eabi/8.3.1/include",
+        "."
+    ],
+}
