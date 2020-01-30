@@ -15,7 +15,7 @@
                 "-v", "${cwd}/:/${workspaceFolderBasename}",
                 "-d",
                 "-it",
-                "gcc-arm-none-eabi"
+                "twatorowski/gcc-arm-none-eabi"
             ],
             "problemMatcher": [],
             "group": {
@@ -79,7 +79,7 @@
             "args": [
                 "exec",
                 "-w",
-                "/gcc-arm-none-eabi-8-2019-q3-update",
+                "/gcc-arm-none-eabi",
                 "${workspaceFolderBasename}",
                 "sh",
                 "-c",
