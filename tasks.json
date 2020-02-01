@@ -83,7 +83,7 @@
                 "${workspaceFolderBasename}",
                 "sh",
                 "-c",
-                "find . -name \"*.h\" | cpio -updm /${workspaceFolderBasename}/.includes"
+				"mkdir -p /${workspaceFolderBasename}/.includes && find . -name \"*.h\" | xargs cp --parents -t /${workspaceFolderBasename}/.includes",
             ],
             "group": {
                 "kind": "build",
